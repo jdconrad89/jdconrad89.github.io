@@ -170,6 +170,11 @@ a:focus {
     transform: scale(1);
   }
 }
+.content-section {
+  padding-top: 100px;
+}
+
+}
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
