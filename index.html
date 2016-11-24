@@ -11,32 +11,61 @@
 
     <title>Jason Conrad | Web Developer</title>
 
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="style_assets/style.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Jason</span> Conrad
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
                     <li>
-                        <a class="page-scroll" href="about_me.html">About Me</a>
+                        <a class="page-scroll" href="about_me.html">About me</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="blog.html">Blog</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="contact_me.html">My Sites</a>
+                        <a class="page-scroll" href="contact_me.html">Contact Me</a>
                     </li>
                 </ul>
             </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container -->
     </nav>
 
     <!-- Intro Header -->
@@ -46,15 +75,8 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Jason Conrad</h1>
-                        <a href="about_me.html">
-                           <img src="style_assets/images/jason_conrad.jpg" alt="a picture of me" style="width:200px;border:0">
-                        </a>
-                        <p class="intro-text">Welcome to my personal webpage and blog.<br>
-                                              Things will be added and updated as I continue my time<br>
-                                              here at Turing. </p>
-                        <a href="https://www.turing.io/">
-                           <img src="style_assets/images/turing.jpg" alt="turing logo" style="width:200px;border:0">
-                        </a>
+                        <p class="intro-text">Web Developer</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -62,6 +84,69 @@
             </div>
         </div>
     </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Jason</h2>
+                <a href="about_me.html">
+                           <img src="img/jason_conrad.jpg" alt="a picture of me" style="width:200px;border:0">
+                        </a>
+                        <br>
+                <p>
+                  Hello all! My name is Jason Conrad. I am currently a student at <a href= "https://www.turing.io/"> Turing School of Software and Design.</a>
+                </p>
+                <p>I started this journey a few months ago and I can already tell that my life will never be the same. <a href="about_me.html"> read more...</a>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section -->
+    <section id="blog" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>My Blog</h2>
+                <a href="blog.html">
+                           <img src="img/turing.jpg" alt="turing logo" style="width:200px;border:0">
+                        </a>
+                        <br>
+                <h1>Module 1</h1>
+                <p>
+                  I’ve never been one to sit down and write out my thoughts or feelings so a blog is a new venture to me
+                  so here goes nothing:<a href="blog.html"> read more...</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Contact Me</h2>
+                    <p>Please feel free to contact me with any questions.</p>
+                    <a href="contact_me.html" class="btn btn-default btn-lg">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
 </body>
 
 </html>
