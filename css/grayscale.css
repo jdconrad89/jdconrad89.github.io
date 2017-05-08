@@ -25,11 +25,21 @@ h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 p {
   margin: 0 0 25px;
   font-size: 18px;
   line-height: 1.5;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 @media (min-width: 768px) {
   p {
@@ -225,7 +235,7 @@ a:focus {
 .content-section {
   padding-top: 100px;
 }
-.download-section {
+.my_projects-section {
   width: 100%;
   padding: 50px 0;
   color: 		white;
@@ -244,7 +254,7 @@ a:focus {
   .content-section {
     padding-top: 250px;
   }
-  .download-section {
+  .my_projects-section {
     padding: 100px 0;
   }
   #map {

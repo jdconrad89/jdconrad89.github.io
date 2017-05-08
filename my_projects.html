@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jason Conrad | My Projects</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">My Projects</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                      <a class="page-scroll" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="about_me.html">About Me</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">My Projects</h1>
+                        <p class="intro-text"> See below to view a few of the projects I have worked on</p>
+                        <a href="#contact-me" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Contact Me Section -->
+<section id="contact-me" class="contact-information-section text-center">
+    <div class="contact-me-section">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+              <br><br>
+                <h2>My Projects</h2>
+                <h3> Briefcase </h3>
+
+                <img src="img/briefcase.jpg" alt="a picture of the homepage of briefcase" style="width:750px;border:0">
+                <br><br><br>
+                <p> Briefcase is an index of Turing alumni for employers to see. Students can create portfolios which detail
+                    the students' background and preferences. They are also able to link projects they worked on throughout
+                    their time at Turing.
+                </p>
+                <p>
+                    Users login through Census, a third party authorization application created by Turing students. All pictures and files are hosted on AWS S3.
+                    Briefcase runs on a Rails backend, with the frontend being done in React, and the database with Postgres.
+                </p>
+                <p>
+                    On this project I was tasked with giving the graduates the ability to enter their previous experiences so that
+                    potential employers would be able to search for graduates with experience in particular fields. I also implemented
+                    the search funtionality for people to find alumni by their previous experience.
+                </p>
+                <a href="https://turing-briefcase-production.herokuapp.com/" class="btn btn-default btn-lg">View Site</a>
+                <a href="https://github.com/turingschool-projects/briefcase" class="btn btn-default btn-lg">View Code</a>
+                <br><br><br>
+                <h3> The Count </h3>
+
+                <img src="img/the_count.jpg" alt="a picture of the homepage of the count" style="width:750px;border:0">
+                <br><br><br>
+                <p>
+                    The Count was a personal project that I worked on during my third module of Turing. Over the past few years I have tried many different
+                    diets and have found that for the most part all of these diet companies held the power and control.
+                    If you wanted to lose weight you had to pay their membership fees, buy their food, utilize their recipes
+                    etc. I constanly was finding that there really wasn't a way to find out the nutritional information for
+                    my own recipes. With The Count you have the ability to look up the nutritional information for a single
+                    item (either an item you can buy at a grocery store or at a restaurant). You are also able to look up
+                    create recipe cards and add ingredients to it so you can track the nutritional information of your favorite
+                    recipes.
+                </p>
+
+                <p>
+                    Being a personal project I personally built every aspect of The Count. It's ran on a Rails backend, utilizes a Postgres database,
+                    authorization is completed with Facebook oauth, and it uses the Nutronix api to find the nurtirional information.
+                    Eventually I want to make The Count a one stop shop for living a healthier life, adding calorie burning tracking,
+                    nutritional blogs, and boards for people to share recipes and support during their journey to a healthier life.
+                </p>
+                <a href="http://the-count.herokuapp.com/" class="btn btn-default btn-lg">View Site</a>
+                <a href="https://github.com/jdconrad89/the-count" class="btn btn-default btn-lg">View Code</a>
+                <br><br><br>
+
+                <h3> Mini Market </h3>
+
+                <img src="img/mini_market.jpg" alt="a picture of the homepage of mini market" style="width:750px;border:0">
+                <br><br><br>
+                <p>
+                  Mini Market was a group project in which myself and three other people created an online market. With Mini Market you can create a user account,
+                  look at items by category, select items to add to your cart, adjust the amount of a particular item in your cart, complete an order, and view your past orders
+                </p>
+
+                <p>
+                    I really tried to spread myself around on this project and have experience in many aspects of the project as I could.
+                    I helped with the authentication process, authorization process, I built the cart, and helped with some basic styling
+                    amongst helping others with other aspects of the project.
+                </p>
+                <a href="https://mini-market.herokuapp.com/" class="btn btn-default btn-lg">View Site</a>
+                <a href="https://github.com/cews7/little_shop" class="btn btn-default btn-lg">View Code</a>
+
+        </div>
+    </div>
+</section>
+
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
